@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
 import {
   Checkout,
   CheckoutButton,
   CheckoutStatus,
-} from '@coinbase/onchainkit/checkout';
-import Image from 'next/image';
-import Footer from 'src/components/Footer';
-import WalletWrapper from 'src/components/WalletWrapper';
-import { useAccount } from 'wagmi';
-import LoginButton from '../components/LoginButton';
-import SignupButton from '../components/SignupButton';
+} from "@coinbase/onchainkit/checkout";
+import Image from "next/image";
+import Footer from "src/components/Footer";
+import WalletWrapper from "src/components/WalletWrapper";
+import { useAccount } from "wagmi";
+import LoginButton from "../components/LoginButton";
+import SignupButton from "../components/SignupButton";
 
 const productId = process.env.NEXT_PUBLIC_PRODUCT_ID;
 
@@ -32,7 +32,7 @@ export default function Page() {
         <div className="flex h-[450px] w-[450px] max-w-full items-center justify-center rounded-xl">
           <div className="rounded-xl bg-[#F3F4F6] px-4 py-[11px]">
             <Image
-              src={'/product.jpg'}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/product.jpg`}
               width={250}
               height={250}
               alt="Product"
