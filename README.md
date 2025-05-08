@@ -3,14 +3,11 @@
 ## Local Development
 
 ```sh
-# Install bun
-curl -fsSL https://bun.sh/install | bash
-
 # Install dependencies
-bun i
+yarn
 
 # Start development server
-bun dev
+yarn run dev
 ```
 
 ## License
