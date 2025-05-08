@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { NEXT_PUBLIC_URL } from '../config';
 
 import './global.css';
 import '@coinbase/onchainkit/styles.css';
@@ -19,18 +18,14 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Onchain App Template',
-  description: 'Built with OnchainKit',
-  openGraph: {
-    title: 'Onchain App Template',
-    description: 'Built with OnchainKit',
-    images: [`${NEXT_PUBLIC_URL}/vibes/vibes-19.png`],
-  },
+  title: 'Web3 E-Commerce',
 };
 
 export default function RootLayout({
   children,
-}: { children: React.ReactNode }) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className="flex items-center justify-center">

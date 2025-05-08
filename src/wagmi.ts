@@ -19,6 +19,8 @@ export function useWagmiConfig() {
   }
 
   return useMemo(() => {
+    coinbaseWallet.preference = 'smartWalletOnly';
+
     const connectors = connectorsForWallets(
       [
         {
@@ -31,7 +33,7 @@ export function useWagmiConfig() {
         },
       ],
       {
-        appName: 'onchainkit',
+        appName: 'web3-ecommerce',
         projectId,
       },
     );
