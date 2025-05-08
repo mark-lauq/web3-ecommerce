@@ -40,6 +40,7 @@
     "autoprefixer": "^10.4.19",
     "bufferutil": "^4.0.7",
     "encoding": "^0.1.13",
+    "happy-dom": "^17.4.6",
     "jsdom": "^24.1.0",
     "lokijs": "^1.5.12",
     "pino-pretty": "^10.2.0",

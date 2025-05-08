@@ -21,7 +21,7 @@ export default defineConfig({
         lines: 50,
       },
     },
-    environment: 'jsdom',
+    environment: 'happy-dom',
     exclude: ['**/node_modules/**', '.next/**', 'public/**'],
     setupFiles: ['./vitest.setup.ts'],
     globals: true,
